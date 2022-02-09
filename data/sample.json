@@ -1,0 +1,27 @@
+[
+	{
+		name: "Anita Herlambang",
+		label: ["Kelas XII IPA", "Fisika"],
+		question: "Sebuah elektron mempunyai massa diam m0. Tentukan energi yang diperlukan untuk mempercepat sebuah elektron dari 0,8 c menjadi 0,96c!",
+		created: "2022-02-08T08:59:22.607Z"
+	},
+	{
+		name: "Bayu Suseno",
+		label: ["Kelas XI IPA", "Kelas XI IPS", "Matematika"],
+		question: "tentukan nilai maksimum dan minimum dari fungsi y = 9 sinx + 9 cosx - 2√2",
+		created: "2022-02-01T08:59:22.607Z"
+	},
+	{
+		name: "Charles Situmorang",
+		label: ["Kelas XII IPS", "Sejarah"],
+		question: "Beberapa waktu yang lalu sempat viral adanya gerakan demonstrasi menolak RUU KUHP dan KPK oleh para pemuda, mahasiswa dan pelajar, Apakah gerakan pemuda, mahasiswa dan pelajar saat ini masih efektif ?",
+		created: "2022-01-31T08:59:22.607Z"
+	},
+	{
+		name: "Dadang Sukmara",
+		label: ["Kelas XII IPA", "Kelas XII IPS", "Matematika"],
+		question: "Sebuah kelompok seni terdiri atas 6 pria dan 5 wanita. Kelompok ini akan mengirimkan 3 pria dan 2 wanita untuk mengikuti festival. Hitunglah banyaknya cara yang dapat dilakukan untuk memilih lima waktu itu jika setiap anggota kelompok berhak dipilih",
+		created: "2021-12-01T08:59:22.607Z"
+	},
+
+]

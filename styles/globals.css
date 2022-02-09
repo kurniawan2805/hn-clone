@@ -1,4 +1,16 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-base: 59 115 197;
+  --color-base-secondary: 38 74 128;
+  --color-base-tertiary: 244 247 250;
+  --color-text: 29 57 98;
+}
+/* color: rgb(59, 115, 197); */
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +25,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */ ;
