@@ -4,7 +4,7 @@ import Link from "next/link";
 
 import Layout from "../components/Layout/Layout";
 import Hero from "../components/Layout/Hero";
-import Card from "../components/Layout/Card";
+import Cards from "../components/Layout/Cards";
 
 const Index = (props) => {
   // fetchData();
@@ -31,7 +31,7 @@ const Index = (props) => {
         voluptate. Quisquam saepe, nihil maiores maxime dolorum omnis quae
         mollitia error facere tempore, nemo nobis atque facilis corporis at?i
         Molestiae?
-        <Card posts={props}></Card>
+        <Cards posts={props}></Cards>
       </main>
     </Layout>
   );
@@ -40,10 +40,13 @@ const Index = (props) => {
 Index.getInitialProps = async () => {
   const url =
     "https://gist.githubusercontent.com/kurniawan2805/6f54b50e72eedd68430623761b45371c/raw/3e044cd5194790a3ac9f5f6556d6b6cf8eabfe07/sample.json";
-  const data = await axios.get(url).then((res) => res.data);
-
-  console.log(data);
-  return data;
+  // "https://gist.githubusercontent.com/kurniawan2805/6f54b50e72eedd68430623761b45371c/raw/a9703d6063b21135c2310afd13f8d0625b6528f3/sample.json";
+  return await axios.get(url).then((res) => {
+    // console.log(res.data);
+    return res.data;
+  });
+  // console.log(result);
+  // return result;
   // const posts = res.data.map((post) => post.data);
 };
 
