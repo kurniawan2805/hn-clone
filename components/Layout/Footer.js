@@ -9,8 +9,8 @@ const Footer = () => {
       <div className="text-center p-4 bg-primary opacity-70">
         <span className="text-base text-white font-bold leading-5 tracking-wide">
           © 2022
-          <Link href="#pahamify.com" passHref>
-            <a target="__blank" href="#" class="underline">
+          <Link href="https://pahamify.com" passHref>
+            <a target="__blank" href="#" className="underline">
               Pahamify
             </a>
           </Link>

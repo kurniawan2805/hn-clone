@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="">
               <a
                 aria-label="button-login"
-                className="bg-white rounded-full text-sm text-blue-800 py-1 px-3  font-bold leading-5 tracking-wide cursor-pointer"
+                className="bg-white rounded-full text-xs text-base-primary py-1 px-3  font-bold leading-5 tracking-wide cursor-pointer"
               >
                 Login
               </a>

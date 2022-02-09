@@ -14,17 +14,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundColor: {
+      colors: {
         primary: withOpacityValue("--color-base"),
         secondary: withOpacityValue("--color-base-secondary"),
         tertiary: withOpacityValue("--color-base-tertiary"),
+        "text-color": withOpacityValue("--color-text"),
       },
       textColor: {
-        base: withOpacityValue("--color-base"),
+        "base-primary": withOpacityValue("--color-base"),
         primary: withOpacityValue("--color-text"),
-      },
-      width: {
-        720: "720px",
       },
     },
   },
