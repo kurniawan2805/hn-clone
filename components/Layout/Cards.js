@@ -18,8 +18,24 @@ const Cards = ({ posts }) => {
       {/* {posts.map((post) => {
         {/* // return <div key={post.name}>{post.name}</div>; */}
       {/* // })} */} */}
-      <div className="flex space-x-2 justify-center"></div>
-      Hello, Card
+      {data.map((post) => {
+        return (
+          <div key={post.name}>
+            {post.name}
+            {post.label.map((lbl) => {
+              return (
+                <div key={lbl} className="flex space-x-2 justify-center">
+                  <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-600 text-white rounded">
+                    {lbl}
+                  </span>
+                </div>
+              );
+            })}
+            {/* </div> */}
+          </div>
+        );
+      })}
+      {/* Hello, Card */}
       {/* <ul></ul> */}
     </div>
   );
