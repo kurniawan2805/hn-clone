@@ -3,7 +3,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer">
-      <div className="bg-base-primary px-4 pt-6 pb-2 rounded-t-lg flex flex-wrap">
+      <div className="bg-primary px-4 pt-6 pb-2 rounded-t-lg flex flex-wrap">
         {/* <span className="text-muted ">Copyright &copy; 2022</span> */}
       </div>
       <div className="text-center p-4 bg-primary opacity-70">

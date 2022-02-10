@@ -19,6 +19,9 @@ module.exports = {
         secondary: withOpacityValue("--color-base-secondary"),
         tertiary: withOpacityValue("--color-base-tertiary"),
         "text-color": withOpacityValue("--color-text"),
+        "gray-lgt": "#F4F7FA",
+        "card-primary": "#E0E8F3",
+        // background: rgb(244, 247, 250),
       },
       textColor: {
         "base-primary": withOpacityValue("--color-base"),

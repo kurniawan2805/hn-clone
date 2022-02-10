@@ -5,10 +5,9 @@ import Link from "next/link";
 
 const Layout = (props) => {
   return (
-    <div className="container mx-auto min-h-screen flex flex-col relative">
-      {/* <Header /> */}
+    <div className="container mx-auto min-h-screen flex flex-col relative ls-0.025 bg-gray-lgt">
       <Navbar />
-      <div className="layout">{props.children}</div>
+      <div>{props.children}</div>
       <Footer />
     </div>
   );

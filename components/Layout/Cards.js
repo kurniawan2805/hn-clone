@@ -1,42 +1,45 @@
-import { useState } from "react";
+import * as timeago from "timeago.js";
 
 const Cards = ({ posts }) => {
   // console.log(posts);
   const data = [];
-  // const [data, setData] = useState([]);
   for (let [key, value] of Object.entries(posts)) {
     // console.log(value);
     data.push(value);
-    // }
   }
-  console.log(data);
-  // for (let [key, value] of Object.entries(posts)) {
-  //   console.log(`key=${key} value=${value}`);
-  // }
   return (
-    <div>
-      {/* {posts.map((post) => {
-        {/* // return <div key={post.name}>{post.name}</div>; */}
-      {/* // })} */} */}
+    <div className="bg-light-lgt">
       {data.map((post) => {
         return (
-          <div key={post.name}>
-            {post.name}
-            {post.label.map((lbl) => {
-              return (
-                <div key={lbl} className="flex space-x-2 justify-center">
-                  <span className="text-xs inline-block py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-600 text-white rounded">
+          <div
+            key={post.name}
+            className="bg-white rounded-lg p-4 cursor-pointer mb-4"
+          >
+            <div className="text-primary text-sm font-bold mb-2">
+              {post.name}
+            </div>
+            <div className="mb-1 flex flex-wrap items-center">
+              {post.label.map((lbl) => {
+                return (
+                  <label
+                    key={lbl}
+                    className="text-opacity-70 text-xs mb-1 py-0.5 px-2 font-bold mr-2 bg-primary/25 text-base-primary rounded-md"
+                  >
                     {lbl}
-                  </span>
-                </div>
-              );
-            })}
-            {/* </div> */}
+                  </label>
+                );
+              })}
+            </div>
+            <div className="text-primary text-sm overflow-auto break-words">
+              {post.question}
+            </div>
+            <div className="text-primary/50 text-sm mt-2">
+              {timeago.format(post.created)}
+            </div>
+            <hr className="mt-4" />
           </div>
         );
       })}
-      {/* Hello, Card */}
-      {/* <ul></ul> */}
     </div>
   );
 };
