@@ -1,6 +1,17 @@
 import Image from "next/image";
+import "slick-carousel/slick/slick.css?raw";
+import "slick-carousel/slick/slick-theme.css?raw";
+
+import Slider from "react-slick";
 
 const Hero = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
   return (
     <div id="hero-banner" className="flex-grow">
       {/* <main className="w-full flex flex-col"> */}
@@ -14,14 +25,23 @@ const Hero = () => {
         </p>
         <div className="container mx-auto">
           <div className="heading-bg mt-5">
-            <Image
-              src="https://mipi.ai/heading-bg.svg"
-              // src="https://placekitten.com/g/600/600"
-              alt="Background Hero"
-              width="720"
-              height="500"
-              priority
-            />
+            <Slider {...settings}>
+              <Image
+                src="https://mipi.ai/heading-bg.svg"
+                // src="https://placekitten.com/g/600/600"
+                alt="Background Hero"
+                width="720"
+                height="500"
+                priority
+              />
+              <Image
+                src="https://mipi.ai/heading-bg-kuliah.png"
+                // src="https://placekitten.com/g/600/600"
+                alt="Background Hero 2"
+                width="720"
+                height="500"
+              />
+            </Slider>
           </div>
         </div>
       </div>

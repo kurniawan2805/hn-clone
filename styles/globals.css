@@ -10,6 +10,22 @@
 }
 /* color: rgb(59, 115, 197); */
 
+.slick-dot-add {
+  bottom: 60px;
+  position: absolute;
+  bottom: -25px;
+
+  display: block;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+
 /* html,
 body {
   padding: 0;

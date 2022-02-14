@@ -5,14 +5,16 @@ import Link from "next/link";
 import Layout from "../components/Layout/Layout";
 import Hero from "../components/Layout/Hero";
 import Cards from "../components/Layout/Cards";
+import ImageSlider from "../components/ImageSlider";
 
 const Index = (props) => {
   // fetchData();
-  // console.log(props);
+  console.log(props);
   return (
     <Layout>
       <main className="flex-1 overflow-y-auto">
-        <Hero></Hero>
+        {/* <Hero></Hero> */}
+        <ImageSlider />
         <div className="bg-gray-lgt rounded-lg rounded-b-none relative -mt-5 px-4 pt-3 pb-4">
           <div className="p-4 bg-white rounded-lg mb-6 -mt-12 flex flex-col items-center">
             {/* selector button  */}
@@ -64,13 +66,17 @@ Index.getInitialProps = async () => {
   const url =
     "https://gist.githubusercontent.com/kurniawan2805/6f54b50e72eedd68430623761b45371c/raw/3e044cd5194790a3ac9f5f6556d6b6cf8eabfe07/sample.json";
   // "https://gist.githubusercontent.com/kurniawan2805/6f54b50e72eedd68430623761b45371c/raw/a9703d6063b21135c2310afd13f8d0625b6528f3/sample.json";
-  return await axios.get(url).then((res) => {
-    // console.log(res.data);
-    return res.data;
-  });
-  // console.log(result);
-  // return result;
-  // const posts = res.data.map((post) => post.data);
+  try {
+    const request = await axios.get(url);
+    return request.data;
+  } catch (error) {}
+  alert(error);
+  // then((res) => {
+  // console.log(res.data);
+  // return res.data;
+  // });
+  // const result = await request.json();
+  // console.log(JSON.parse(request.data));
 };
 
 export default Index;

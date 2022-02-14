@@ -4,13 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Slider from "react-slick";
 
-const Carousel = () => {
-  const renderSlides = () =>
-    [1, 2, 3, 4, 5, 6, 7, 8].map((num, index) => (
-      <div key={index}>
-        <h3 className="text-center">Slide {num}</h3>
-      </div>
-    ));
+const ImageSlider = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -19,9 +13,10 @@ const Carousel = () => {
     autoplaySpeed: 5000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    // dotsClass: "slick-dots-add",
   };
   return (
-    <div className="container min-h-screen mx-auto bg-primary">
+    <div>
       {/* <Slider {...settings}>{renderSlides()}</Slider> */}
       <Slider {...settings}>
         <div className="bg-primary pt-16">
@@ -33,6 +28,7 @@ const Carousel = () => {
             secara instan!
           </p>
           <Image
+            className="-mt-15"
             src="https://mipi.ai/heading-bg.svg"
             // src="https://placekitten.com/g/600/600"
             alt="Background Hero"
@@ -50,6 +46,7 @@ const Carousel = () => {
             sini!
           </p>
           <Image
+            className="-mt-15"
             src="https://mipi.ai/heading-bg-kuliah.png"
             // src="https://placekitten.com/g/600/600"
             alt="Background Hero 2"
@@ -62,4 +59,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default ImageSlider;
