@@ -1,0 +1,8 @@
+.slick-dots {
+  bottom: 60px !important;
+  padding: 10px;
+}
+
+.slick-active > button::before {
+  color: white !important;
+}

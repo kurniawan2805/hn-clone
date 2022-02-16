@@ -7,6 +7,7 @@ import Slider from "react-slick";
 const ImageSlider = () => {
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     autoplay: true,
     speed: 500,

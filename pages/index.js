@@ -9,7 +9,7 @@ import ImageSlider from "../components/ImageSlider";
 
 const Index = (props) => {
   // fetchData();
-  console.log(props);
+  // console.log(props);
   return (
     <Layout>
       <main className="flex-1 overflow-y-auto">
